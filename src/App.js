@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Route from "./components/Route";
 import Accordion from "./components/Accordion";
+import Search from "./components/Search";
 
 const items = [
   {
@@ -25,7 +26,9 @@ const App = () => {
       <Route path="/">
         <Accordion items={items} />
       </Route>
-      <Route path="/list">Search</Route>
+      <Route path="/list">
+        <Search />
+      </Route>
       <Route path="/dropdown">Dropdown</Route>
       <Route path="/translate">Translate</Route>
     </div>
