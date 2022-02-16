@@ -14,7 +14,6 @@ const Dropdown = ({ label, options, selected, onSelectedChange }) => {
     document.body.addEventListener("click", onBodyClick, { capture: true });
 
     return () => {
-      console.log("USE EFFECT CLEAN UP");
       document.body.removeEventListener("click", onBodyClick, {
         capture: true,
       });

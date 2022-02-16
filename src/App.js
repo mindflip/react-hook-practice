@@ -4,6 +4,7 @@ import Route from "./components/Route";
 import Accordion from "./components/Accordion";
 import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
+import Translate from "./components/Translate";
 
 const items = [
   {
@@ -55,7 +56,9 @@ const App = () => {
           onSelectedChange={setSelected}
         />
       </Route>
-      <Route path="/translate">Translate</Route>
+      <Route path="/translate">
+        <Translate />
+      </Route>
     </div>
   );
 };
